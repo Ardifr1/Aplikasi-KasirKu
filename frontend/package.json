@@ -1,0 +1,1 @@
+{"name": "kasir-app-frontend", "version": "1.0.0", "description": "Frontend untuk Kasir App", "scripts": {"start": "echo 'Jalankan frontend secara manual atau gunakan live-server'", "dev": "echo 'Development mode'"}, "keywords": [], "author": "", "license": "ISC"}
