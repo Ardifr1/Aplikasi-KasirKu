@@ -1,0 +1,18 @@
+/* Gaya dasar Kasir App.
+ * TODO: ganti warna/layout sesuai Figma (file ini sengaja netral).
+ */
+:root { --bg: #f5f5f5; --card: #fff; --text: #333; --primary: #1976d2; --danger: #d32f2f; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
+nav { max-width: 1000px; margin: 0 auto 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: var(--primary); background: var(--card); padding: 8px 12px; border-radius: 6px; }
+.container { max-width: 1000px; margin: 0 auto; background: var(--card); padding: 24px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 14px; }
+button { padding: 8px 14px; border: none; border-radius: 6px; background: var(--primary); color: #fff; cursor: pointer; }
+button.danger { background: var(--danger); }
+input, select, textarea { padding: 8px; border: 1px solid #ccc; border-radius: 6px; width: 100%; margin: 4px 0 10px; }
+form { margin-top: 12px; }
+.alert { padding: 10px; border-radius: 6px; margin: 10px 0; }
+.alert.error { background: #ffebee; color: #c62828; }
+.alert.success { background: #e8f5e9; color: #2e7d32; }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk - Kasir App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="dashboard.html">Dashboard</a><a href="pos.html">Kasir</a><a href="products.html">Produk</a><a href="categories.html">Kategori</a><a href="#" id="logout">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Produk</h1>
+    <!-- TODO: tabel + form tambah/edit sesuai Figma; update TANPA field stock -->
+    <form id="filter"><input id="search" placeholder="Cari nama/barcode"> <input id="category_id" placeholder="category_id"> <button>Cari</button></form>
+    <div id="list"></div>
+    <h2>Tambah (admin)</h2>
+    <form id="create"><input id="name" placeholder="Nama"> <input id="category" placeholder="category_id"> <input id="price" placeholder="Harga"> <input id="stock" placeholder="Stok awal"> <input id="barcode" placeholder="Barcode (opsional)"> <button>Simpan</button></form>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

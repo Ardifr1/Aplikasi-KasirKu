@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengaturan - Kasir App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="dashboard.html">Dashboard</a><a href="settings.html">Pengaturan</a><a href="#" id="logout">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Pengaturan Toko</h1>
+    <!-- TODO: form store_name/address/business_number/email/logo (update admin only) -->
+    <div id="current"></div>
+    <form id="form"><input id="store_name" placeholder="Nama toko"> <input id="address" placeholder="Alamat"> <input id="business_number" placeholder="No. usaha"> <input id="email" placeholder="Email"> <input id="logo" placeholder="URL logo"> <button>Simpan (admin)</button></form>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/settings.js"></script>
+</body>
+</html>

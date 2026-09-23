@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Kasir App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="dashboard.html">Dashboard</a><a href="pos.html">Kasir</a><a href="products.html">Produk</a><a href="categories.html">Kategori</a><a href="stocks.html">Stok</a><a href="transactions.html">Transaksi</a><a href="reports.html">Laporan</a><a href="users.html">Pengguna</a><a href="settings.html">Pengaturan</a><a href="notifications.html">Notifikasi</a><a href="activity-logs.html">Log</a><a href="profile.html">Profil</a><a href="#" id="logout">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Dashboard</h1>
+    <!-- TODO: sesuaikan kartu ringkasan & grafik dengan Figma -->
+    <form id="filter"><input type="date" id="date_from"> <input type="date" id="date_to"> <button>Filter</button></form>
+    <div id="summary"></div>
+    <h2>Penjualan Harian</h2><div id="daily"></div>
+    <h2>Produk Terlaris</h2><div id="top"></div>
+    <h2>Pembayaran</h2><div id="pay"></div>
+    <h2>Stok Menipis</h2><div id="low"></div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

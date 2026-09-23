@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan - Kasir App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="dashboard.html">Dashboard</a><a href="reports.html">Laporan</a><a href="#" id="logout">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Laporan (admin/pemilik)</h1>
+    <!-- TODO: form filter + tombol export CSV sesuai Figma -->
+    <form id="filter"><input type="date" id="date_from"> <input type="date" id="date_to"> <button>Lihat</button> <button type="button" id="export">Export CSV</button></form>
+    <div id="sales"></div>
+    <div id="summary"></div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/reports.js"></script>
+</body>
+</html>

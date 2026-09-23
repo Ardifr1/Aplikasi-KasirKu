@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - Kasir App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="dashboard.html">Dashboard</a><a href="profile.html">Profil</a><a href="#" id="logout">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Profil</h1>
+    <!-- TODO: form profil + ganti password sesuai Figma -->
+    <div id="me"></div>
+    <form id="update"><input id="name" placeholder="Nama"> <input id="username" placeholder="Username"> <button>Simpan</button></form>
+    <form id="pw"><input id="current_password" type="password" placeholder="Password saat ini"> <input id="new_password" type="password" placeholder="Password baru min 8"> <button>Ganti Password</button></form>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
